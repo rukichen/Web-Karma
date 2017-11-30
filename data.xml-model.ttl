@@ -1,0 +1,316 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1c06lcrbvx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "data.xml" ;
+	km-dev:modelPublicationTime "1512052256128"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"schema\"},{\"columnName\":\"cn\"}],[{\"columnName\":\"schema\"},{\"columnName\":\"givenname\"}],[{\"columnName\":\"schema\"},{\"columnName\":\"sn\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"schema\"},{\"columnName\":\"cn\"}],[{\"columnName\":\"schema\"},{\"columnName\":\"givenname\"}],[{\"columnName\":\"schema\"},{\"columnName\":\"sn\"}]]" ;
+	km-dev:hasModelLabel "data.xml" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"hasGithubURL\": true,
+                    \"GithubURL\": \"https://github.com/rukichen/Web-Karma\",
+                    \"baseURI\": \"\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"schema\"},
+                    {\"columnName\": \"givenname\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#value\",
+                    \"DomainLabel\": \"owl:Thing1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"schema\\\"},{\\\"columnName\\\":\\\"givenname\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"schema\\\"},{\\\"columnName\\\":\\\"givenname\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"schema\"},
+                    {\"columnName\": \"sn\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#value\",
+                    \"DomainLabel\": \"owl:Thing1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"schema\\\"},{\\\"columnName\\\":\\\"sn\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"schema\\\"},{\\\"columnName\\\":\\\"sn\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"schema\"},
+                    {\"columnName\": \"cn\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#value\",
+                    \"DomainLabel\": \"owl:Thing1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"schema\\\"},{\\\"columnName\\\":\\\"cn\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"schema\\\"},{\\\"columnName\\\":\\\"cn\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_2e613c7d-f4b5-439a-b5fd-08980347a695 a rr:TriplesMap .
+
+_:node1c06lcrbvx1 km-dev:hasTriplesMap km-dev:TriplesMap_2e613c7d-f4b5-439a-b5fd-08980347a695 .
+
+km-dev:TriplesMap_2e613c7d-f4b5-439a-b5fd-08980347a695 km-dev:isPartOfMapping _:node1c06lcrbvx1 .
+
+_:node1c06lcrbvx2 rr:tableName "data.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c06lcrbvx1 .
+
+_:node1c06lcrbvx1 km-dev:hasLogicalTable _:node1c06lcrbvx2 .
+
+km-dev:TriplesMap_2e613c7d-f4b5-439a-b5fd-08980347a695 rr:logicalTable _:node1c06lcrbvx2 ;
+	rr:subjectMap _:node1c06lcrbvx3 .
+
+_:node1c06lcrbvx1 km-dev:hasSubjectMap _:node1c06lcrbvx3 .
+
+_:node1c06lcrbvx3 km-dev:isPartOfMapping _:node1c06lcrbvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing1" ;
+	rr:class owl:Thing ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "owl:Thing1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_fc414323-f845-4189-b6e7-6cedd5d34a4e rr:predicate rdf:value .
+
+_:node1c06lcrbvx4 rr:column "[\"schema\",\"cn\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c06lcrbvx1 .
+
+_:node1c06lcrbvx1 km-dev:hasObjectMap _:node1c06lcrbvx4 .
+
+km-dev:PredicateObjectMap_fc414323-f845-4189-b6e7-6cedd5d34a4e rr:objectMap _:node1c06lcrbvx4 .
+
+km-dev:TriplesMap_2e613c7d-f4b5-439a-b5fd-08980347a695 rr:predicateObjectMap km-dev:PredicateObjectMap_fc414323-f845-4189-b6e7-6cedd5d34a4e .
+
+km-dev:PredicateObjectMap_fc414323-f845-4189-b6e7-6cedd5d34a4e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c06lcrbvx1 .
+
+_:node1c06lcrbvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fc414323-f845-4189-b6e7-6cedd5d34a4e .
+
+km-dev:PredicateObjectMap_089de770-e614-420f-8ce0-4ab7cf6be156 rr:predicate rdf:value .
+
+_:node1c06lcrbvx5 rr:column "[\"schema\",\"sn\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c06lcrbvx1 .
+
+_:node1c06lcrbvx1 km-dev:hasObjectMap _:node1c06lcrbvx5 .
+
+km-dev:PredicateObjectMap_089de770-e614-420f-8ce0-4ab7cf6be156 rr:objectMap _:node1c06lcrbvx5 .
+
+km-dev:TriplesMap_2e613c7d-f4b5-439a-b5fd-08980347a695 rr:predicateObjectMap km-dev:PredicateObjectMap_089de770-e614-420f-8ce0-4ab7cf6be156 .
+
+km-dev:PredicateObjectMap_089de770-e614-420f-8ce0-4ab7cf6be156 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c06lcrbvx1 .
+
+_:node1c06lcrbvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_089de770-e614-420f-8ce0-4ab7cf6be156 .
+
+km-dev:PredicateObjectMap_8fd8e7b4-b5f9-4066-bf3b-f81a205bd85b rr:predicate rdf:value .
+
+_:node1c06lcrbvx6 rr:column "[\"schema\",\"givenname\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c06lcrbvx1 .
+
+_:node1c06lcrbvx1 km-dev:hasObjectMap _:node1c06lcrbvx6 .
+
+km-dev:PredicateObjectMap_8fd8e7b4-b5f9-4066-bf3b-f81a205bd85b rr:objectMap _:node1c06lcrbvx6 .
+
+km-dev:TriplesMap_2e613c7d-f4b5-439a-b5fd-08980347a695 rr:predicateObjectMap km-dev:PredicateObjectMap_8fd8e7b4-b5f9-4066-bf3b-f81a205bd85b .
+
+km-dev:PredicateObjectMap_8fd8e7b4-b5f9-4066-bf3b-f81a205bd85b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c06lcrbvx1 .
+
+_:node1c06lcrbvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8fd8e7b4-b5f9-4066-bf3b-f81a205bd85b .
