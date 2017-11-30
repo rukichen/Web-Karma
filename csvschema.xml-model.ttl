@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1c06lb4frx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "csvschema.xml" ;
+	km-dev:modelPublicationTime "1512052199931"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[]" ;
+	km-dev:hasOutputColumns "[]" ;
+	km-dev:hasModelLabel "csvschema.xml" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[{
+    \"commandName\": \"SetWorksheetPropertiesCommand\",
+    \"model\": \"new\",
+    \"inputParameters\": [
+        {
+            \"name\": \"worksheetId\",
+            \"type\": \"worksheetId\",
+            \"value\": \"W\"
+        },
+        {
+            \"name\": \"selectionName\",
+            \"type\": \"other\",
+            \"value\": \"DEFAULT_TEST\"
+        },
+        {
+            \"name\": \"properties\",
+            \"type\": \"other\",
+            \"value\": {
+                \"graphLabel\": \"\",
+                \"hasBaseURI\": false,
+                \"hasGithubURL\": true,
+                \"GithubURL\": \"https://github.com/rukichen/Web-Karma\",
+                \"baseURI\": \"\",
+                \"hasPrefix\": false,
+                \"hasServiceProperties\": false
+            }
+        },
+        {
+            \"name\": \"inputColumns\",
+            \"type\": \"hNodeIdList\",
+            \"value\": \"[]\"
+        },
+        {
+            \"name\": \"outputColumns\",
+            \"type\": \"hNodeIdList\",
+            \"value\": \"[]\"
+        }
+    ],
+    \"tags\": [\"Transformation\"]
+}]""" .
