@@ -1,0 +1,11 @@
+{
+    "id": "system.xml",
+    "name": "system.xml",
+    "description": null,
+    "sourceColumns": [],
+    "mappingToSourceColumns": [],
+    "graph": {
+        "nodes": [],
+        "links": []
+    }
+}
