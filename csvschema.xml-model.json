@@ -1,0 +1,11 @@
+{
+    "id": "csvschema.xml",
+    "name": "csvschema.xml",
+    "description": null,
+    "sourceColumns": [],
+    "mappingToSourceColumns": [],
+    "graph": {
+        "nodes": [],
+        "links": []
+    }
+}
