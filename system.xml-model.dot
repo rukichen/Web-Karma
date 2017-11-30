@@ -1,0 +1,8 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="system.xml"
+subgraph cluster {
+label="model"
+}
+}
